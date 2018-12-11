@@ -217,13 +217,10 @@ input[type=submit] {
   border: 0 none;
 }
 
-/* MEDIA QUERY */
+/* MEDIA QUERY */ 
 
 @media screen and (max-width: 640px) {
   /* 640px */
-body{
-  background: gray;
-}
 
   .container {
   width: 90%;
@@ -243,8 +240,20 @@ body{
 
 @media screen and (max-width: 768px) {
   /* 768px */
+  .container{
+    width: 90%;
+  }
+
+  .main-section {
+    margin-bottom: 50%; 
+  }
+
+  #test {
+    margin-bottom: 10%;
+  }
 }
+
 
 @media screen and (max-width: 980px) {
   /* 960px */
-}
+} 
