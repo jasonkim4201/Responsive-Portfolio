@@ -219,27 +219,20 @@ input[type=submit] {
 
 /* MEDIA QUERY */ 
 
-@media screen and (max-width: 640px) {
-  /* 640px */
 
-  .container {
-  width: 90%;
-} 
+/*placed min and max to make it stop overriding the smaller pixel inqueies */
 
-  #logo {
-  width: 100%;
+@media screen and (min-width:768px) and (max-width: 980px) {
+  /* 980px */
+  body {
+    background: blue;
   }
-
-  #links {
-  text-align: center;
-  width: 100%;
-  }
-
-
 }
+
 
 @media screen and (max-width: 768px) {
   /* 768px */
+  
   .container{
     width: 90%;
   }
@@ -253,7 +246,24 @@ input[type=submit] {
   }
 }
 
+@media screen and (max-width: 640px) {
+  /* 640px */
 
-@media screen and (max-width: 980px) {
-  /* 960px */
+  .container {
+  width: 90%;
 } 
+
+  #logo {
+  width: 100%;
+  position: static;
+  }
+ /* try giving nav width of 100%*/
+  #links {
+  text-align: center;
+  width: 100%;
+  }
+
+
+}
+
+
